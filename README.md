@@ -6,4 +6,4 @@ Untuk no 1 bisa dijalankan di browser, dan nomer 2-5 bisa dijalankan di console 
 screnshoot no 1
 ![Get Data](https://raw.githubusercontent.com/akimabs/tesDumbways/master/1/screnshoot/1.png)
 Screenshoot no 7
-![Get Data](https://raw.githubusercontent.com/akimabs/tesDumbways/master/7/screnshoot/aplikasi.png)
+![Get Data](https://raw.githubusercontent.com/akimabs/tesDumbways/master/7/screenshoot/aplikasi.png)
