@@ -1,0 +1,40 @@
+.container-form {
+	width: 500px;
+	background-color: rgb(240, 240, 240);
+	padding: 30px;
+}
+label {
+	display: block;
+	padding-left: 15px;
+	text-indent: -15px;
+}
+input {
+	width: 13px;
+	height: 13px;
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+	position: relative;
+	top: -1px;
+	*overflow: hidden;
+}
+.rd {
+	font-size: 13px;
+	color: white;
+	padding-left: 20px;
+	background-color: rgb(95, 95, 255);
+	border-radius: 9px;
+}
+
+.cb {
+	font-size: 13px;
+	color: white;
+	padding-left: 20px;
+	background-color: rgb(255, 95, 122);
+	border-radius: 9px;
+}
+#nama,
+#hp,
+#alamat {
+	padding-left: 100px;
+}

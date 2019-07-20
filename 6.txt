@@ -1,0 +1,20 @@
+1. create table cities
+CREATE TABLE cities (id int(5) PRIMARY KEY AUTO_INCREMENT, name varchar(10));
+
+2. create table biodata
+CREATE TABLE biodata(id int(5) PRIMARY KEY AUTO_INCREMENT, full_name varchar(10), date_of_birth DATE, place_of_birth int(5), phone_number varchar(15), address text,last_education ENUM('SD','SMP','SMK','KULIAH'), religion ENUM('Islam','Kristen','Katolik'), hobbies SET('Renang', 'Mancing', 'Game', 'Gibah', 'Progaming' ),FOREIGN KEY (place_of_birth) REFERENCES cities(id));
+
+3.insert data cities
+INSERT INTO cities VALUES ('1', 'Jakarta');
+
+4.insert data biodata
+INSERT INTO biodata VALUES ('1', 'Lucinta Luna', '1992-07-12', '1', '081111', 'Jakarta Selatan', 'S1', 'Kristen', 'Renang,Game');
+
+5.query getData
+SELECT biodata.id as id_biodata, biodata.full_name, date_format(biodata.date_of_birth,'%d-%M-%Y') as date_of_birth, biodata.last_education, biodata.religion, biodata.hobbies, biodata.place_of_birth as place_of_birth_id, cities.name as place_of_birth FROM cities JOIN biodata ON cities.id = biodata.place_of_birth 
+
+6.update Biodata by id
+UPDATE biodata SET full_name = 'Lucinta Luni', place_of_birth = '2', address = 'Bandung Kota', hobbies = 'Renang,Mancing,Game' WHERE biodata.id = 1;
+
+7.delete Biodata by id
+DELETE FROM biodata WHERE biodata.id=4
